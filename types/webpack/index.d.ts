@@ -1321,7 +1321,7 @@ declare namespace webpack {
             }>;
             assetsByChunkName?: Record<string, Record<string, string[]>>;
             builtAt?: number;
-            children?: ToJsonOptions[] & { name?: string };
+            children?: (ToJsonOptions & { name?: string })[];
             chunks?: Array<{
                 children: number[];
                 childrenByOrder: Record<string, number[]>;
